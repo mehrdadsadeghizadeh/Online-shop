@@ -1,0 +1,462 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("/font/Vazir/Vazir.ttf");
+}
+body {
+  overflow-x: hidden !important;
+  font-family: "Vazir" !important;
+}
+.content {
+  padding: 0 18px !important;
+}
+.shop-items-image {
+  width: 63% !important;
+  height: 40% !important;
+  margin-top: 5% !important;
+}
+.shop-items-image {
+  position: relative !important;
+  align-self: stretch !important;
+  height: auto !important;
+  flex-shrink: 0 !important;
+  object-fit: cover !important;
+  transition: transform 0.4s ease-in-out !important;
+}
+#storeme:hover .shop-items-image {
+  transform: scale(1.08) !important;
+}
+#texttitli-price {
+  font-size: 90%;
+}
+#storeme {
+  border: thin solid var(--color) !important;
+  border-radius: 5px !important;
+}
+
+@media screen and (max-width: 576px) {
+  #texttitli2 {
+    margin-top: -10px !important;
+  }
+  .shop-items-price {
+    margin-bottom: 14px !important;
+  }
+}
+.container {
+  width: 100% !important;
+  height: 700px !important;
+}
+#imgme {
+  text-align: center !important;
+}
+
+#storeme:hover {
+  box-shadow: 0.5px 1px 11px var(--color);
+}
+.header-store {
+  display: flex;
+  align-items: center;
+  margin-top: 48px !important;
+  margin-right: 4%;
+}
+.numberOfProductsAvailable {
+  display: flex;
+}
+.numberOfProductsAvailable p {
+  font-weight: bold;
+  color: #767575;
+}
+.numberOfProductsAvailable span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #767575;
+  margin-top: 3px;
+}
+#skla {
+  margin-right: 6% !important;
+  margin-left: -21% !important;
+}
+#te {
+  width: 80% !important;
+  background-color: rgb(171, 170, 171);
+}
+#te1 {
+  width: 40% !important;
+  height: 2.5px !important;
+  background-image: linear-gradient(
+    to right,
+    rgb(178, 159, 178),
+    var(--color),
+    rgb(174, 156, 177)
+  );
+}
+#te2 {
+  text-align: right !important;
+  margin-right: 15px !important;
+  cursor: pointer;
+}
+#border {
+  border-radius: 5px;
+  width: 174px !important;
+  margin-right: 25% !important;
+  border: thin solid rgb(178 176 176) !important;
+  height: 37.5% !important;
+}
+
+#border2 {
+  width: 174px !important;
+  border-radius: 6px;
+  margin-right: 25% !important;
+  border: thin solid rgb(178 176 176) !important;
+  height: 37.5% !important;
+}
+/*---------------محدوده قیمت---------------*/
+.main {
+  padding: 0px 9px;
+  border-radius: 6px;
+  width: 174px !important;
+  margin-right: 25% !important;
+  border: thin solid rgb(178 176 176) !important;
+  height: 37.5% !important;
+}
+@media only screen and (max-width: 1320px) {
+  #border,
+  .main,
+  #border2 {
+    width: 144px !important;
+  }
+}
+@media only screen and (max-width: 1181px) {
+  #border {
+    margin-right: 10% !important;
+  }
+  #border2 {
+    margin-right: 10% !important;
+  }
+  .main {
+    margin-right: 10% !important;
+  }
+}
+
+.main:hover {
+  transform: scale(1.05);
+}
+
+.gfg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #01940b;
+}
+
+.custom-wrapper {
+  margin: 0;
+  width: 70%;
+  padding: 0px 25px 40px;
+  position: relative;
+  left: 63px;
+}
+
+/* Styles for the price input container */
+.price-input-container {
+  width: 100%;
+}
+
+.price-input .price-field {
+  display: flex;
+  margin-bottom: 22px;
+}
+.price-input2 .price-field {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.price-field span {
+  margin-right: 10px;
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+.price-field input {
+  flex: 1;
+  height: 33px;
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 9px;
+  text-align: center;
+  border: 0px;
+  background: #e4e4e4;
+  width: 10px;
+}
+
+.price-input {
+  width: 100%;
+  font-size: 19px;
+  color: #555;
+}
+.price-input2 {
+  width: 100%;
+  font-size: 19px;
+  color: #555;
+}
+
+/* Remove Arrows/Spinners */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.slider-container {
+  width: 100%;
+}
+.slider-container2 {
+  width: 100%;
+}
+
+.slider-container {
+  height: 6px;
+  position: relative;
+  background: #e4e4e4;
+  border-radius: 5px;
+}
+.slider-container2 {
+  height: 6px;
+  position: relative;
+  background: #e4e4e4;
+  border-radius: 5px;
+}
+
+.slider-container .price-slider {
+  height: 100%;
+  left: 35%;
+  right: 15%;
+  position: absolute;
+  border-radius: 5px;
+  background: var(--color);
+}
+.slider-container2 .price-slider {
+  height: 100%;
+  left: 35%;
+  right: 15%;
+  position: absolute;
+  border-radius: 5px;
+  background: #d51d91;
+}
+
+.range-input {
+  position: relative;
+}
+.range-input2 {
+  position: relative;
+}
+
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: none;
+  top: -5px;
+  pointer-events: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.range-input2 input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: none;
+  top: -5px;
+  pointer-events: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+/* Styles for the range thumb in WebKit browsers */
+input[type="range"]::-webkit-slider-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 70%;
+  background: #555;
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 80%;
+    margin-right: 5px;
+  }
+
+  .custom-wrapper {
+    width: 100%;
+    left: 0;
+    padding: 0 10px;
+  }
+
+  .projtitle {
+    width: 100%;
+    position: relative;
+    right: 26px;
+  }
+
+  .price-input {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price-input2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price-field {
+    margin-bottom: 10px;
+  }
+}
+/* pagenumbers */
+.pagenumbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 220px !important;
+}
+
+.pagenumbers button {
+  width: 50px;
+  height: 50px;
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--color);
+  border-radius: 3px !important;
+  margin: 5px;
+  transition: 0.4s;
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 0px 0px 4px rgba(9, 9, 9, 0.2);
+  box-shadow: 0px 0px 4px rgba(161, 160, 160, 0.2);
+}
+@media screen and (max-width: 1250px) {
+  .pagenumbers {
+    margin-top: 150px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .pagenumbers {
+    display: none !important;
+  }
+}
+
+.pagenumbers button:hover {
+  background-color: var(--color);
+}
+
+.pagenumbers button.active {
+  background-color: #c30041;
+  box-shadow: inset 0px 0px 4px rgba(6, 6, 6, 0.2);
+}
+
+#input-checkbox[type="checkbox"] {
+  accent-color: var(--color) !important;
+}
+
+@media only screen and (max-width: 990px) {
+  #imgme {
+    margin-right: 10% !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 130% !important;
+  }
+  #imgme {
+    margin-right: -3% !important;
+  }
+}
+
+#clicktoinfor {
+  color: var(--color);
+  border: thin solid var(--color) !important;
+}
+
+#clicktoinfor:hover {
+  background-color: var(--color);
+  color: white;
+}
+#clicktoinfor2 {
+  color: var(--color);
+  border: thin solid var(--color) !important;
+}
+#clicktoinfor2:hover {
+  background-color: var(--color);
+  color: white;
+}
+#clicktoinfor3 {
+  color: var(--color);
+  border: thin solid var(--color) !important;
+  font-size: 12px !important;
+}
+#clicktoinfor3:hover {
+  background-color: var(--color);
+  color: white;
+}
+
+#colortext {
+  color: #6b6969;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+#colortext:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--color);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#colortext:hover {
+  color: var(--color);
+}
+#colortext:hover:after {
+  width: 100%;
+  left: 0;
+}
+@media screen and (max-height: 300px) {
+  #colortext {
+    margin-top: 40px;
+  }
+}
+
+hr {
+  width: 100px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* دکمه فیلتر */
+.filterButton {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 60px !important;
+  color: white !important;
+  background-color: var(--color) !important;
+  border-color: var(--color) !important;
+  padding: 5px !important;
+  border-radius: 10px !important;
+  width: 90% !important;
+  display: block;
+}
+@media screen and (min-width: 992px) {
+  .filterButton {
+    display: none !important;
+  }
+}

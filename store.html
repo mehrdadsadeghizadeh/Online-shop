@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه اینترنتی دیجی آنلاین _ فروشگاه</title>
+    <link rel="icon" href="img/img-home/images.png" />
+    <link rel="stylesheet" href="/component/store/store.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="/botstrapMinCss/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- لودر سایت -->
+    <div class="loader">
+      <span class="loader2"></span>
+    </div>
+    <nav id="navbar"></nav>
+
+    <div class="content">
+      <div class="mt-4 header-store">
+        <div class="numberOfProductsAvailable">
+          <p>  </p>
+          <span> (32محصول) </span>
+        </div>
+        <section class="d-none d-lg-block">
+          <div id="skla" class="row text-center">
+            <p class="col-2">به ترتیب :</p>
+            <a id="colortext" class="col-2 navbar-brand">جدید ترین</a>
+            <a id="colortext" class="col-2 navbar-brand">ارزان ترین</a>
+            <a id="colortext" class="col-2 navbar-brand"> گران ترین</a>
+            <a id="colortext" class="col-2 navbar-brand">محبوب ترین</a>
+            <a id="colortext" class="col-2 navbar-brand">پرامتیازترین</a>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <div class="col-2 mt-2 d-none d-lg-block">
+          <div id="border">
+            <p class="text-center mt-3">دسته بندی</p>
+            <hr />
+            <div id="input-checkbox">
+              <p id="te2" class="navbar-brand mt-3">
+                <input
+                  id="input-checkbox"
+                  class="me-1"
+                  type="checkbox"
+                  name="D"
+                  value="false"
+                />پیراهن مردانه
+              </p>
+              <p id="te2" class="navbar-brand">
+                <input
+                  id="input-checkbox"
+                  class="me-1"
+                  type="checkbox"
+                  name="H"
+                  value="false"
+                />تیشرت
+              </p>
+              <p id="te2" class="navbar-brand">
+                <input
+                  id="input-checkbox"
+                  class="me-1"
+                  type="checkbox"
+                  name="E"
+                  value="false"
+                />ساعت مردانه
+              </p>
+              <p id="te2" class="navbar-brand">
+                <input
+                  id="input-checkbox"
+                  class="me-1"
+                  type="checkbox"
+                  name="G"
+                  value="false"
+                />شلوار مردانه
+              </p>
+              <p id="te2" class="navbar-brand">
+                <input
+                  id="input-checkbox"
+                  class="me-1"
+                  type="checkbox"
+                  name="A"
+                  value="false"
+                />نیم بوت مردانه
+              </p>
+              <p id="te2" class="navbar-brand">
+                <input
+                  id="input-checkbox"
+                  class="me-1"
+                  type="checkbox"
+                  name="C"
+                  value="false"
+                />مانتو
+              </p>
+              <p id="te2" class="navbar-brand">
+                <input
+                  id="input-checkbox"
+                  class="me-1"
+                  type="checkbox"
+                  name="F"
+                  value="false"
+                />شال و روسری
+              </p>
+              <p id="te2" class="navbar-brand">
+                <input
+                  id="input-checkbox"
+                  class="me-1"
+                  type="checkbox"
+                  name="B"
+                  value="false"
+                />نیم بوت زنانه
+              </p>
+            </div>
+          </div>
+          <div class="mt-3">
+            <div class="main" dir="ltr">
+              <p class="mt-3 text-center">محدوده قیمت</p>
+              <hr />
+              <div class="price-input-container">
+                <div class="price-input">
+                  <div class="price-field">
+                    <span>کمترین</span>
+                    <input type="number" class="min-input" value="200000" />
+                  </div>
+                  <div class="price-field">
+                    <span>بیشترین</span>
+                    <input type="number" class="max-input" value="1300000" />
+                  </div>
+                </div>
+                <div class="slider-container">
+                  <div class="price-slider"></div>
+                </div>
+              </div>
+              <!-- Slider -->
+              <div class="range-input mb-4">
+                <input
+                  type="range"
+                  class="min-range"
+                  min=""
+                  max="1100000"
+                  value="200000"
+                  step="1"
+                />
+                <input
+                  type="range"
+                  class="max-range"
+                  min=""
+                  max="1500000"
+                  value="1300000"
+                  step="1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div id="border2" class="mt-3"></div>
+        </div>
+
+        <div class="col-10" id="product">
+          <div id="imgme" class="container row"></div>
+        </div>
+        <!-- دکمه صفحه هات بعدی محصولات -->
+        <span class="pagenumbers" id="btnpage" dir="ltr"></span>
+      </div>
+
+      <!-- modal klick in icon sop -->
+      <div class="modal-sap-content"></div>
+      <!-- modal is filter product -->
+      <div class="modal" id="modal-filter">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">فیلتر محصولات</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="filter-modal">
+                <div class="mt-3">
+                  <div class="main" dir="ltr">
+                    <p class="mt-3 text-center">محدوده قیمت</p>
+                    <hr />
+                    <div class="price-input-container">
+                      <div class="price-input2">
+                        <div class="price-field">
+                          <span>کمترین</span>
+                          <input
+                            type="number"
+                            class="min-input"
+                            value="200000"
+                          />
+                        </div>
+                        <div class="price-field">
+                          <span>بیشترین</span>
+                          <input
+                            type="number"
+                            class="max-input"
+                            value="1300000"
+                          />
+                        </div>
+                      </div>
+                      <div class="slider-container2">
+                        <div class="price-slider"></div>
+                      </div>
+                    </div>
+                    <!-- Slider -->
+                    <div class="range-input2 mb-4">
+                      <input
+                        type="range"
+                        class="min-range"
+                        min=""
+                        max="1100000"
+                        value="200000"
+                        step="1"
+                      />
+                      <input
+                        type="range"
+                        class="max-range"
+                        min=""
+                        max="1500000"
+                        value="1300000"
+                        step="1"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button
+      class="filterButton fixed-bottom"
+      data-bs-toggle="modal"
+      data-bs-target="#modal-filter"
+    >
+      فیلتر
+    </button>
+    <footer class="d-none d-lg-block"></footer>
+
+    <script src="/bootstrapMinJs/bootstrap.min.js"></script>
+    <script type="module" src="/js/app.js"></script>
+    <script type="module" src="/component/store/store.js"></script>
+  </body>
+</html>

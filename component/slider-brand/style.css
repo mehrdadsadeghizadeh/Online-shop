@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+:root{
+  --color: #ff236c !important;  
+}
+.slide-container-brand{
+  max-width: 88% !important;
+  width: 100% !important;
+  padding: 40px 0 !important;
+  border: thin solid var(--color) !important;
+  border-radius: 25px !important;
+  margin-top: 30px !important;
+  height: 285px !important; 
+}
+.slide-content-brand{
+  margin: 0 40px !important;
+  overflow: hidden !important;
+  border-radius: 25px !important;
+}
+.card-brand{
+  border-radius: 25px !important;
+}
+.image-content,
+.card-content{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding: 10px 14px !important;
+}
+.image-content{
+  position: relative !important;
+  row-gap: 5px !important;
+  padding: 25px 0 !important;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0 !important;
+  background-color: #FFF !important;
+}
+.card-image{
+  position: relative !important;
+  height: 150px !important;
+  width: 150px !important;
+  padding: 3px !important;
+}
+.card-image .card-img{
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+#swiper-pagination-bullet{
+  background-color: rgb(249, 145, 195) !important;
+  opacity: 1 !important;
+}
+#swiper-pagination-bullet-active{
+  background-color: var(--color) !important;
+}
+.swiper-button-next-brand{
+  color: var(--color) !important;
+}
+.swiper-button-prev-brand{
+  color: var(--color) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content-brand{
+    margin: 0 10px !important;
+  }
+  .swiper-navBtn{
+    display: none !important;
+  }
+}
+.name-brand{
+  text-align: center !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  color: var(--color) !important;
+  margin-top: -10px !important;
+}
+.swiper-button-next-brand{
+  background-color: var(--color) !important;
+  color: white !important;
+  margin-top: 28px !important;
+  border-radius: 50% !important;
+}
+.swiper-button-prev-brand{
+  background-color: var(--color) !important;
+  color: white !important;
+  margin-top: 28px !important;
+  border-radius: 50% !important;
+}

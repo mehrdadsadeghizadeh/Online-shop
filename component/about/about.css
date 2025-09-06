@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("/font/Vazir/Vazir.ttf");
+}
+body {
+  overflow-x: hidden !important; 
+  font-family: "Vazir" !important;
+}
+body::before {
+    display: block;
+    content: "";
+    height: 108px;
+  }
+  :root{
+    --color: #ff236c !important;  
+  }
+#navbartop{
+    margin-left: 55%;
+  }
+.contener_textAbout{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+p{
+    color: #545479;
+}
+@media screen and (max-width: 537px){
+  .contener_textAbout{
+    padding-left: 55px;
+    padding-right: 55px;
+}
+}
+@media screen and (max-width: 385px){
+  .contener_textAbout{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+}

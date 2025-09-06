@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Vazir";
+  src: url("/font/Vazir/Vazir.ttf");
+}
+:root{
+  --color: #ff236c !important;  
+}
+/* برای fa */
+html {
+  font-family: helvetica, arial;
+}
+body {
+  font-family: "Vazir" !important;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/img-home/11434f2d-5d7f-4a59-b0be-32fff9ce2bfd.webp");
+}
+
+::selection {
+  color: #fff;
+  background: var(--color) !important;
+}
+.wrapper {
+  width: 380px;
+  padding: 40px 30px 15px 30px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  animation: fade-outr 1s;
+}
+@keyframes fade-outr {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.wrapper header {
+  font-size: 35px;
+  font-weight: 600;
+}
+.wrapper form {
+  margin: 40px 0;
+}
+form .field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+form .field.shake {
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%,
+  100% {
+    margin-left: 0px;
+  }
+  20%,
+  80% {
+    margin-left: -12px;
+  }
+  40%,
+  60% {
+    margin-left: 12px;
+  }
+}
+form .field.shake2 {
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%,
+  100% {
+    margin-left: 0px;
+  }
+  20%,
+  80% {
+    margin-left: -12px;
+  }
+  40%,
+  60% {
+    margin-left: 12px;
+  }
+}
+form .field .input-area {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+form input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  background: none;
+  caret-color: var(--color) !important;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+form .field input:focus,
+form .field.valid input {
+  border-color: var(--color) !important;
+}
+
+form .field.shake input,
+form .field.error input {
+  border-color: #f90404;
+}
+
+.field .input-area i {
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area .icon {
+  right: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+.input-area .error-icon {
+  left: 15px;
+  color: #f90404;
+}
+
+form input:focus ~ .icon,
+form .field.valid .icon {
+  color: var(--color) !important;
+}
+
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon {
+  color: #bfbfbf;
+}
+
+form input::placeholder {
+  color: #bfbfbf;
+  font-size: 17px;
+}
+form .field .error-txt {
+  color: #f90404;
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 3px;
+}
+#password-error3 {
+  color: #f90404;
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 3px;
+}
+form .field .error {
+  display: none;
+}
+
+form .field.shake .error,
+form .field.error .error {
+  display: block;
+}
+form .pass-txt {
+  text-align: right;
+  margin-top: -10px;
+  margin-right: 5px !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.17;
+  font-weight: bold;
+}
+.wrapper a {
+  color: var(--color) !important;
+  text-decoration: none;
+  margin-right: 5px !important;
+}
+.wrapper a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+form input[type="submit"] {
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: var(--color) !important;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+form input[type="submit"]:hover {
+  background: var(--color) !important;
+}
+.sign-txt {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.17;
+  font-weight: bold;
+}
+#parent_baktohome{
+  margin-top: 15px;
+}
+#parent_baktohome i {
+  font-size: 1.4em;
+  margin-left: 5px;
+}
+/* استایل دهی به لودر سایت */
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+nav {
+  display: none;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* ادامه استایل لودر */
+.loader2 {
+  color: var(--color) !important;
+  font-size: 65px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  transform: translateZ(0);
+  animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
+}
+
+@keyframes mltShdSpin {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em,
+      -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em,
+      -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+      -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em,
+      -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+      -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
+      -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+
+@keyframes round {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* فرم ثبت نام */
+#wrapper-newacant {
+  display: none;
+  animation: fade-out 1s;
+}
+@keyframes fade-out {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#newPassword {
+  margin-top: 20px;
+}
+/* در صورت لاگین کاربر */
+.contener__login {
+  width: 680px;
+  padding: 20px 30px 20px 30px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  display: none;
+}
+.name-profile {
+  color: #9b9a9a;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.name-value {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.icon-profile {
+  width: 25px;
+  margin-right: 80%;
+  margin-top: 20px;
+}
+#border-profil {
+  border-bottom: thin solid rgb(224, 224, 224);
+}
+.border-amode {
+  border-right: thin solid rgb(224, 224, 224);
+}
+img {
+  cursor: pointer;
+}
+.ExitIsAccant {
+  text-align: center !important;
+  justify-content: center !important;
+  display: flex;
+  cursor: pointer;
+  margin-top: 20px !important;
+}
+.ExitIsAccant img {
+  width: 25px !important;
+}
+.Exit-text {
+  margin-right: 10px !important;
+  margin-top: 18px !important;
+  font-weight: bold !important;
+}
+hr{
+  display: none !important;
+}
+
+@media  screen and (max-width: 689px){
+  #InSmallMode{
+  display: initial !important;
+}
+.contener__login{
+  margin-top: 500px !important;
+}
+.icon-profile{
+  margin-right: 300% !important;
+}
+.contener__login{
+  padding: 0 !important;
+}
+#border-profil {
+  border-bottom: none !important;
+}
+.border-amode {
+  border-right: none !important;
+}
+hr{
+  display: block !important;
+  color: rgb(119, 119, 119) !important;
+}
+}
+@media  screen and (max-width: 380px){
+  .icon-profile{
+    margin-right: 340% !important;
+  }
+}
+
+/*ولیو پسورد (نقطه)*/
+#pasword__value {
+  margin-right: 10px;
+  margin-top: -39px;
+  font-size: 50px;
+}
+/* modal name */
+.modal-body input{
+ width: 90%;
+ border: thin solid rgb(97, 96, 96);
+ border-radius: 10px;
+ height: 35px;
+ outline:none;
+ padding: 5px;
+ color: var(--color) !important;
+ margin-bottom: 15px;
+}
+.modal-body input:hover{
+  border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9 ;
+}
+.modal-body input:focus{
+  border-color: var(--color) !important;
+}
+.modal-footer{
+  justify-content: center ;
+}
+.modal-footer button{
+ width: 40%;
+ color: white;
+ background-color: var(--color) !important;
+ border: none;
+border-radius: 15px;
+padding: 5px;
+font-weight: bold;
+}
+.error_newEmail{
+  color: #f90404;
+  margin-right: 5px;
+}
+.error_pasword_previous{
+  color: #f90404;
+  margin-right: 5px;
+}
+.error__new__pasword{
+  color: #f90404;
+  margin-right: 5px;
+}
+#name_erroe{
+  color: #f90404;
+  margin-right: 5px;
+}
+.icon_name{
+  color: #949494 ;
+  width: 25px;
+  margin-left: 80%;
+  margin-top: 20px;
+}
+#wrapper_Management{
+  display: none;
+}
+/* control_panel */
+.wrapper_Management {
+  width: 420px;
+  padding: 50px 30px 5px 30px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  animation: fade-outr 1s;
+}
+.wrapper_Management header{
+  font-size: 28px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+.control_panel{
+  display: none;
+}
+.icon_BacktoHome{
+  color: var(--color) !important;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 17px;
+}
+.icon_BacktoHome i{
+  font-size: 21.5px;
+  margin-top: 40px;
+}
+.control_panel h5{
+  font-weight: bold;
+  text-align: right;
+}
+.control_panel input{
+  margin-top: 12px;
+  padding: 4px;
+}
+.input_product{
+  margin-left: 260px ;
+}
+@media only screen and (max-width: 900px){
+  .input_product{
+    margin-left: 0 ;
+  }
+  .wrapper_Management {
+    width: 370px;
+  }
+  #icon_img{
+    font-size: 22px;
+    margin-top: 5px;
+  }
+  .icon_Exit{
+    margin-right: 1px;
+  }
+  .icon_BacktoHome{
+    margin-left: 1px;
+  }
+  
+}
+.img_loding{
+  font-weight: bold;
+  margin-top: 12px;
+}
+#icon_img{
+  font-size: 22px;
+}
+.btn_delet_ptoduct{
+  width: 100% ;
+  margin-top: 12px ;
+  border: none ;
+  color: white ;
+  background-color: #fa3131 !important;
+  border-radius: 6px ;
+  margin-bottom: 5px ;
+}
+.btn_save_product input{
+  width: 100% ;
+  margin-bottom: 38px ;
+  margin-top: 1px ;
+  border: none ;
+  color: white ;
+  background-color: var(--color) !important;
+  border-radius: 6px ;
+}
+#img_local{
+  display: none;
+}
+.input_mosolat input{
+  text-align: right;
+}
+.error_input_price{
+  color: #f90404;
+
+  margin-right: 5px;
+}
+
+.error_input_product{
+  color: #f90404;
+  margin-right: 5px;
+}
+.error_input_price {
+  text-align: right;
+}
+label{
+  text-align: right;
+}
+.error_input_id{
+  color: #f90404;
+  margin-right: 5px;
+}
+form .error_input_id{
+  text-align: right;
+}
+.icon_Exit{
+  color: var(--color) !important;
+  font-weight: bold;
+  margin-right: 17px;
+  cursor: pointer;
+}

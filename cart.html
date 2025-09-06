@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه اینترنتی دیجی آنلاین _ سبد خرید</title>
+    <link rel="icon" href="img/img-home/images.png" />
+    <link rel="stylesheet" href="/component/cart/cart.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="/botstrapMinCss/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  </head>
+  <body>
+           <!-- لودر سایت -->
+           <div class="loader">
+            <span class="loader2"></span>    
+          </div>
+    <div id="navbar"></div>
+    <div class="content">
+      <div class="text-center">
+        <div class="shop-items" id="hoverme"></div>
+        <div class="apendallinformationproductlg d-lg-none d-sm-block">
+          <!-- نمایش اطلاعات کل سبد خرید در حالت ال جی -->
+        </div>
+      </div>
+
+      <div class="d-none d-lg-block">
+        <div class="row text-center" id="cartproduct">
+          <!-- نمایش تک تک محصولات در سبد خرید -->
+          <div class="col-9">
+            <div id="apendpruducttocart"></div>
+          </div>
+          <!-- نمایش اطلاعات کل سبد خرید در حالت اس ام -->
+          <div class="col-3 text-start" id="borderproductcart2">
+            <div class="apendallinformationproduct"></div>
+          </div>
+        </div>
+      </div>
+
+     <!-- نمایش عکس سبد خربد خالی -->
+        <div id="imgCartMPT">
+          <img  class="imgcartmpt" src="img/img-home/empty-cart.svg" >
+          <p class="cartinmpt">سبد خرید شما خالی است !!</p>
+          <p>شما میتوانید از قسمت محصولات کالای مرود نظر خود را انتخاب کنید.</p>
+        </div>
+
+
+      <!-- modal klick in icon sop -->
+      <div class="modal-sap-content">
+      </div>
+
+
+    </div>
+    <footer></footer>
+    <script src="/bootstrapMinJs/bootstrap.min.js"></script>
+    <script type="module" src="/js/app.js"></script>
+    <script type="module" src="/component/cart/cart.js"></script>
+
+
+  </body>
+</html>

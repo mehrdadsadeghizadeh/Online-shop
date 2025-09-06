@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه اینترنتی دیجی آنلاین _ حساب کاربری</title>
+    <link rel="icon" href="img/img-home/images.png" />
+    <link rel="stylesheet" href="./component/login/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./botstrapMinCss/bootstrap.rtl.min.css" />
+  </head>
+  <body>
+    <!-- لودر سایت -->
+    <div class="loader">
+      <span class="loader2"></span>
+    </div>
+    <!-- لاگین  -->
+    <div class="wrapper">
+      <header>حساب کاربری</header>
+      <form action="#">
+        <div class="field email">
+          <div class="input-area">
+            <input type="text" placeholder="ایمیل خود را وارد کنید" />
+            <i class="icon fas fa-envelope"></i>
+            <i class="error error-icon fas fa-exclamation-circle"></i>
+          </div>
+          <div class="error error-txt">لطفا این قسمت را خالی نگذارید</div>
+        </div>
+        <div class="field password">
+          <div class="input-area">
+            <input type="password" placeholder="رمز خود را وارد کنید" />
+            <i class="icon fas fa-lock"></i>
+            <i class="error error-icon fas fa-exclamation-circle"></i>
+          </div>
+          <div id="password-error" class="error error-txt">
+            پسورد خود را وارد نکرده اید
+          </div>
+        </div>
+        <div class="pass-txt"><a>رمز خود را فراموش کرده اید ؟</a></div>
+        <input id="submit" type="submit" value="ورود" />
+      </form>
+      <div class="sign-txt">
+        حساب کاربری ندارید؟<a id="newacant">ایجاد حساب</a>
+      </div>
+      <div class="sign-txt">
+        مدیر یا ادمین سایت هستید؟<a id="Login_to_management">وارد شوید</a>
+      </div>
+      <div class="sign-txt" id="parent_baktohome">
+        <a id="bakToHome"><i class="fa fa-home" aria-hidden="true"></i>بازگشت به خانه</a>
+      </div>
+    </div>
+    <!-- ایجاد حساب کاربری -->
+    <div class="wrapper" id="wrapper-newacant">
+      <header>ایجاد حساب</header>
+      <form action="#" id="forms">
+        <div class="field email" id="name_form">
+          <div class="input-area">
+            <input type="text" placeholder="نام و نام خانوادگی" />
+            <div class="icon_name">
+              <i class="fa fa-user-circle person fa-5x"></i>
+            </div>
+            <i
+              class="error error-icon fas fa-exclamation-circle"
+              id="icon_error_name"
+            ></i>
+          </div>
+          <div class="error error-txt" id="error-txt3">
+            لطفا نام و یا نام خانوادگی خود را وارد کنید
+          </div>
+        </div>
+
+        <div class="field email" id="emails">
+          <div class="input-area">
+            <input type="text" placeholder="ایمیل خود را وارد کنید" />
+            <i class="icon fas fa-envelope"></i>
+            <i class="error error-icon fas fa-exclamation-circle"></i>
+          </div>
+          <div class="error error-txt" id="error-txt2">
+            لطفا این قسمت را خالی نگذارید
+          </div>
+        </div>
+        <div class="field password" id="passwords">
+          <div class="input-area">
+            <input type="password" placeholder="رمز خود را وارد کنید" />
+            <i class="icon fas fa-lock"></i>
+            <i class="error error-icon fas fa-exclamation-circle"></i>
+          </div>
+          <div id="password-error2" class="error error-txt">
+            پسورد خود را وارد نکرده اید
+          </div>
+        </div>
+        <div class="field password" id="password-new">
+          <div class="input-area" id="newPassword">
+            <input
+              id="password2"
+              type="password"
+              placeholder="لطفا رمز خود را مجددا وارد کنید"
+            />
+            <i class="icon fas fa-lock"></i>
+            <i
+              id="icon-error"
+              class="error error-icon fas fa-exclamation-circle"
+            ></i>
+          </div>
+          <div id="password-error3" class="error error-txt">
+            پسورد خود را وارد نکرده اید
+          </div>
+        </div>
+
+        <input class="submit" type="submit" value="ثبت نام" />
+      </form>
+      <div class="sign-txt">
+        حساب کاربری دارید؟<a id="accantme">وارد شوید</a>
+      </div>
+    </div>
+    <!-- ورود مدیریت وب سایت -->
+    <div class="wrapper" id="wrapper_Management">
+      <header>مدیریت سایت</header>
+      <form action="#" class="form_Management">
+        <div class="field email" id="email_Management">
+          <div class="input-area">
+            <input type="text" placeholder="نام کاربری خود را وارد کنید" />
+            <div class="icon_name">
+              <i class="fa fa-user-circle person fa-5x"></i>
+            </div>
+            <i class="error error-icon fas fa-exclamation-circle"></i>
+          </div>
+          <div class="error error-txt">لطفا کد ملی خود را وارد کنید</div>
+        </div>
+        <div class="field password">
+          <div class="input-area">
+            <input type="password" placeholder="رمز خود را وارد کنید" />
+            <i class="icon fas fa-lock"></i>
+            <i class="error error-icon fas fa-exclamation-circle"></i>
+          </div>
+          <div id="password-error" class="error error-txt">
+            پسورد خود را وارد نکرده اید
+          </div>
+        </div>
+        <div class="pass-txt">
+          <a>نام کاربری شما برابر با کد ملی شما میباشد</a>
+        </div>
+        <input id="submit" type="submit" value="ورود" />
+      </form>
+      <div class="sign-txt">
+        مدیر یا ادمین نیستید؟<a id="comback_to_login">بازگشت</a>
+      </div>
+    </div>
+
+    <!-- در صورت لاگین کاربر -->
+    <div class="contener__login">
+      <div class="row" id="InSmallMode">
+        <div class="col-6" id="border-profil">
+          <div class="row">
+            <div class="col-6">
+              <p class="name-profile">نام و نام خانوادگی</p>
+              <p class="name-value">-</p>
+            </div>
+            <div class="col-6">
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#Modal-name"
+                class="icon-profile"
+                src="icon/pencil-square.svg"
+                title="ویرایش"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="col-6 border-amode" id="border-profil">
+          <div class="row">
+            <div class="col-6">
+              <p class="name-profile">کد ملی</p>
+              <p class="name-value" id="codMele__value">-</p>
+            </div>
+            <div class="col-6">
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#modal-codMale"
+                class="icon-profile"
+                src="icon/pencil-square.svg"
+                title="ویرایش"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="row" id="InSmallMode">
+        <div class="col-6" id="border-profil">
+          <div class="row">
+            <div class="col-6">
+              <p class="name-profile">شماره موبایل</p>
+              <p class="name-value" id="telefon__value">-</p>
+            </div>
+            <div class="col-6">
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#modal-telefon"
+                class="icon-profile"
+                src="icon/pencil-square.svg"
+                title="ویرایش"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="col-6 border-amode" id="border-profil">
+          <div class="row">
+            <div class="col-6">
+              <p class="name-profile">ایمیل</p>
+              <p class="name-value" id="email-value">-</p>
+            </div>
+            <div class="col-6">
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#modal-email"
+                class="icon-profile"
+                src="icon/pencil-square.svg"
+                title="ویرایش"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="row" id="InSmallMode">
+        <div class="col-6" id="border-profil">
+          <div class="row">
+            <div class="col-6">
+              <p class="name-profile">رمز عبور</p>
+              <p class="name-value" id="pasword__value">-</p>
+            </div>
+            <div class="col-6">
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#modal-pasword"
+                class="icon-profile"
+                src="icon/pencil-square.svg"
+                title="ویرایش"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="col-6 border-amode" id="border-profil">
+          <div class="row">
+            <div class="col-6">
+              <p class="name-profile">جنسیت</p>
+              <p class="name-value" id="janseyt_value">-</p>
+            </div>
+            <div class="col-6">
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#modal-janseyt"
+                class="icon-profile"
+                src="icon/pencil-square.svg"
+                title="ویرایش"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="row" id="InSmallMode">
+        <div class="col-6">
+          <div class="row">
+            <div class="col-6">
+              <p class="name-profile">شهر</p>
+              <p class="name-value" id="sher_value">-</p>
+            </div>
+            <div class="col-6">
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#modal-sher"
+                class="icon-profile"
+                src="icon/pencil-square.svg"
+                title="ویرایش"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="col-6">
+          <div class="row">
+            <div class="col-6 border-amode">
+              <p class="name-profile">تاریخ تولد</p>
+              <p class="name-value" id="tareghTvalod_value">-</p>
+            </div>
+            <div class="col-6">
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#modal-taregh-tvalod"
+                class="icon-profile"
+                src="icon/pencil-square.svg"
+                title="ویرایش"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ExitIsAccant">
+        <img src="icon/box-arrow-right.svg" />
+        <p class="Exit-text">خروج از حساب کاربری</p>
+      </div>
+    </div>
+    <!-- modal is name -->
+    <div class="modal" id="Modal-name">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              لطفا نام و نام خانوادگی خود را وارد کنید
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>نام</p>
+            <input type="text" class="name" />
+            <p id="name_erroe"></p>
+            <p>نام خانوادگی</p>
+            <input type="text" class="famile" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="save__name__famile">
+              ذخیره اطلاعات
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal codMele -->
+    <div class="modal" id="modal-codMale">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">لطفا کد ملی خود را وارد کنید</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>کد ملی</p>
+            <input type="text" class="codMele" />
+            <div class="modal-footer">
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                class="save__codmle"
+              >
+                ذخیره اطلاعات
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal is telefon -->
+    <div class="modal" id="modal-telefon">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">لطفا شماره موبایل خود را وارد کنید</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>شماره موبایل</p>
+            <input type="text" class="telefon" />
+            <div class="modal-footer">
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                class="save__telefon"
+              >
+                ذخیره اطلاعات
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modla email -->
+    <div class="modal" id="modal-email">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">لطفا ایمیل خود را وارد کنید</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>ایمیل</p>
+            <input type="text" class="email__getValue" />
+            <p class="error_newEmail"></p>
+            <div class="modal-footer">
+              <button type="button" class="save__email">ذخیره اطلاعات</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal pasword -->
+    <div class="modal" id="modal-pasword">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">لطفا پسورد خود را وارد کنید</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>ابتدا پسورد قبلی را وارد کنید</p>
+            <input type="password" class="password-previous" />
+            <p class="error_pasword_previous"></p>
+            <p>پسورد جدید را وارد کنید</p>
+            <input type="password" class="new__pasword" />
+            <p class="error__new__pasword"></p>
+            <div class="modal-footer">
+              <button type="button" class="save__password">
+                ذخیره اطلاعات
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal janseyt -->
+    <div class="modal" id="modal-janseyt">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">لطفا جنسیت خود را وارد کنید</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>جنسیت</p>
+            <input type="text" class="janseyt__value" />
+            <div class="modal-footer">
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                class="save__janseyt"
+              >
+                ذخیره اطلاعات
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal sher -->
+    <div class="modal" id="modal-sher">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">لطفا شهر خود را وارد کنید</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>شهر</p>
+            <input type="text" class="sher__value" />
+            <div class="modal-footer">
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                class="save__sher"
+              >
+                ذخیره اطلاعات
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal taregh tvalod -->
+    <div class="modal" id="modal-taregh-tvalod">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">لطفا تاریخ تولد خود را وارد کنید</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>تاریخ تولد</p>
+            <input type="text" class="taregh__tvalod__value" />
+            <div class="modal-footer">
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                class="save__taregh__tvalod"
+              >
+                ذخیره اطلاعات
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- در صورت ورود به پنل مدیریت -->
+    <section class="control_panel">
+      <div class="wrapper_Management">
+        <header>پنل مدیریت</header>
+        <form>
+          <h5>افزودن محصول</h5>
+          <div class="form_save_product">
+          <div class="input_mosolat">
+            <input
+              class="input_price"
+              type="number"
+              placeholder=" قیمت کالا را وارد کنید"
+              max="9900000"
+            /> <p class="error_input_price"></p>
+          </div>
+          <label>
+            <input
+              list="browsers"
+              name="myBrowser"
+              placeholder="انتخاب محصول"
+              class="input_product"
+            /> <p class="error_input_product"></p>
+          </label>
+          <datalist id="browsers">
+            <option value="نیم بوت مردانه"></option>
+            <option value="نیم بوت زنانه"></option>
+            <option value="پیراهن مردانه"></option>
+            <option value="شلوار مردانه"></option>
+            <option value="تیشرت"></option>
+            <option value="ساعت مردانه"></option>
+            <option value="مانتو"></option>
+            <option value="شال و روسری"></option>
+          </datalist>
+          <img id="img_local" src="" />
+          <div>
+            <input
+              type="file"
+              accept="image/*"
+              name="image"
+              id="file"
+              onchange="loadFile(event)"
+              style="display: none"
+            />
+            <label for="file" style="cursor: pointer"
+              ><h6 class="img_loding">
+                برای بارگذاری عکس محصول کلیک کنید
+                <i
+                  class="fa fa-picture-o"
+                  aria-hidden="true"
+                  id="icon_img"
+                ></i></h6
+            ></label>
+            <img id="output" width="200" />
+          </div>
+          <div class="btn_save_product">
+            <input id="submit" type="submit" value="ذخیره اطلاعات"/>
+          </div>
+        </div>
+          <h5>حذف محصول</h5>
+          <input class="input_id_product" type="text" placeholder="آیدی محصول را وارد کنید" />
+          <p class="error_input_id"></p>
+          <input class="btn_delet_ptoduct" id="submit" type="submit" value="حذف محصول" />
+
+          <span class="icon_BacktoHome">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            بازگشت به خانه
+          </span>
+          <span class="icon_Exit">
+            <i class="fa fa-reply" aria-hidden="true"></i>
+              خروج از پنل مدیریت
+          </span>
+        </form>
+      </div>
+    </section>
+
+    <script src="/bootstrapMinJs/bootstrap.min.js"></script>
+    <script src="./component/login/script.js"></script>
+  </body>
+</html>

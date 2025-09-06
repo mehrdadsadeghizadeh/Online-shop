@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title onload="name_title()"></title>
+    <link rel="icon" href="img/img-home/images.png" />
+    <link href="/botstrapMinCss/bootstrap.rtl.min.css" rel="stylesheet" />
+    <script src="/bootstrapMinJs/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="/component/porductInformation/porductInformation.css"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- لودر سایت -->
+    <div class="loader">
+      <span class="loader2"></span>
+    </div>
+    <nav id="navbar"></nav>
+    <div class="content">
+      <div id="nmaysmohsol" class="text-center mt-5"></div>
+      <div id="apendproductinsm"></div>
+
+      <!-- نمایش محصول -->
+      <div id="nmaysmohsol2" class="mt-5 mb-5"></div>
+
+      <!-- modal klick in icon sop -->
+      <div class="modal-sap-content"></div>
+
+      <!-- پیغام محصول به سبد خرید اضافه شد -->
+      <section class="modal-product">
+        <div class="modal_productPusToCart d-flex">
+          <h6 class="masege-pro">محصول با موفقیت به سبد خرید اضافه شد</h6>
+
+          <svg
+            class="checkmark_product"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 52 52"
+          >
+            <circle
+              class="checkmark__circle_product"
+              cx="26"
+              cy="26"
+              r="25"
+              fill="none"
+            />
+            <path
+              class="checkmark__check_product"
+              fill="none"
+              d="M14.1 27.2l7.1 7.2 16.7-16.8"
+            />
+          </svg>
+        </div>
+        <hr class="hr-modalpro">
+        <div class="proininformashn row">
+          <div class="col-5">
+            <img src="" alt="" />
+          </div>
+          <div class="col-7">
+            <h6></h6>
+            <div class="product_id_price d-flex">
+              <p class="idproduct_savetocart"></p>
+              <p class="priceProduct_savetocart"></p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <a href="./cart.html"><button class="btn-gettocart">برو به سبد خرید</button></a>
+      </section>
+      <!-- نظرات کاربران -->
+      <section class="contener_comments">
+        <div>
+          <h6>نظرات کاربران</h6>
+          <hr />
+        </div>
+        <div class="bus_comments">
+          <h6>هنوز هیچ دیدگاهی ارسال نشده است!</h6>
+          <h6>اولین نفری باشد که دیدگاه خود را با ما به اشتراک می گذارید</h6>
+        </div>
+      </section>
+      <!-- ارسال دیدگاه -->
+      <section class="contener_submit_comment mt-5">
+        <div>
+          <h6>دیدگاه خود را به اشتراک بگذارید</h6>
+        </div>
+        <hr />
+        <div class="contener_submit_comment_discrpshn mt-4">
+          <textarea
+            id="w3review"
+            name="w3review"
+            rows="4"
+            cols="50"
+            id="input_Description"
+            placeholder="دیدگاه خود را شرح دهید"
+          ></textarea>
+        </div>
+        <div class="contener_submit_btn">
+          <button class="btn_didgah" id="error">ارسال دیدگاه</button>
+        </div>
+      </section>
+    </div>
+    <footer></footer>
+    <script type="module" src="/js/app.js"></script>
+    <script
+      type="module"
+      src="/component/porductInformation/porductInformation.js"
+    ></script>
+  </body>
+</html>
