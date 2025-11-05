@@ -17,7 +17,7 @@ A complete online store is built using HTML, CSS, Bootstrap and JavaScript. This
 • User login capability
 
 ### 🚀 How to run
-1. Clone the project:
+1. Clone the project:.\
    `git clone [https://github.com/mehrdadsadeghizadeh/Online-shop.git](https://github.com/mehrdadsadeghizadeh/Online-shop.git)`
    
 2.Open the index.html file in your browser or use a local server.
@@ -26,7 +26,7 @@ A complete online store is built using HTML, CSS, Bootstrap and JavaScript. This
 If you would like to contribute to the development of this project, submit a Pull Request or open an Issue.
 
 ### 📬 Contact me
-Email: mehrdad.sadeghizadeh80@gmail.com
+Email: mehrdad.sadeghizadeh80@gmail.com.\
 Linkdin: [https://www.linkedin.com/in/mehrdad-sadeghizadeh/](https://www.linkedin.com/in/mehrdad-sadeghizadeh/)
 
 
